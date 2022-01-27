@@ -29,3 +29,5 @@ total=total.toFixed(1);
 total=parseFloat(total);
 console.log(total)
 // console.log(total.toFixed(1));
+
+console.log(17%5)
