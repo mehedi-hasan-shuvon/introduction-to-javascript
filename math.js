@@ -17,16 +17,27 @@
 // console.log(rounded);
 
 
-let first = 5;
-let second = 6;
-console.log(first, second);
+// let first = 5;
+// let second = 6;
+// console.log(first, second);
 
-// first apporach with temp
-// let temp = first;
-// first = second;
-// second = temp;
-console.log(first, second);
+// // first apporach with temp
+// // let temp = first;
+// // first = second;
+// // second = temp;
+// console.log(first, second);
 
-// destructuring
-[first, second] = [second, first];
-console.log(first, second);
+// // destructuring
+// [first, second] = [second, first];
+// console.log(first, second);
+
+const business = 450;
+const minister = 350;
+const army = 600;
+if (business > minister && business > army) {
+    console.log("business wins");
+} else if (minister > business && minister > army) {
+    console.log('minister is bigger');
+} else {
+    console.log("army wins");
+}
