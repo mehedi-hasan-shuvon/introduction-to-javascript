@@ -75,6 +75,12 @@ const numbers = [-44, -23, -465, -2, -5, -7]
 
 n = 10
 function fib(n) {
+    if (typeof n != 'number') {
+        return "please give a number";
+    }
+    if (n < 0) {
+        return "please a valid number";
+    }
     let array = [];
     let sum = 0;
     for (let i = 0; i < n; i++) {
@@ -96,4 +102,4 @@ function fib(n) {
     return array;
 }
 
-console.log(fib(n))
+console.log(fib(-1))
