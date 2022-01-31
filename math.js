@@ -103,3 +103,8 @@ function fib(n) {
 }
 
 console.log(fib(-1))
+
+function add(a, b) {
+    return a + b;
+}
+console.log(add("adam" + "eve"))
