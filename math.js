@@ -31,9 +31,11 @@
 // [first, second] = [second, first];
 // console.log(first, second);
 
-const business = 450;
-const minister = 350;
-const army = 600;
+// const business = 450;
+// const minister = 350;
+// const army = 600;
+
+/*
 if (business > minister && business > army) {
     console.log("business wins");
 } else if (minister > business && minister > army) {
@@ -41,3 +43,32 @@ if (business > minister && business > army) {
 } else {
     console.log("army wins");
 }
+*/
+
+// var max=Math.max(business,minister,army);
+// console.log(max);
+
+const numbers = [-44, -23, -465, -2, -5, -7]
+
+
+// function arraySum(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum = sum + numbers[i];
+//     }
+//     return sum;
+// }
+
+// console.log(arraySum(numbers));
+
+function largestElement(numbers) {
+    let largest = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        if (largest < numbers[i]) {
+            largest = numbers[i];
+        }
+    }
+    return largest;
+}
+
+console.log(largestElement(numbers)); 
