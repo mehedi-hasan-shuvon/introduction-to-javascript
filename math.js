@@ -61,14 +61,39 @@ const numbers = [-44, -23, -465, -2, -5, -7]
 
 // console.log(arraySum(numbers));
 
-function largestElement(numbers) {
-    let largest = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-        if (largest < numbers[i]) {
-            largest = numbers[i];
+// function largestElement(numbers) {
+//     let largest = numbers[0];
+//     for (let i = 1; i < numbers.length; i++) {
+//         if (largest < numbers[i]) {
+//             largest = numbers[i];
+//         }
+//     }
+//     return largest;
+// }
+
+// console.log(largestElement(numbers)); 
+
+n = 10
+function fib(n) {
+    let array = [];
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        if (i == 0) {
+            sum = 0;
+
         }
+        else if (i == 1) {
+
+            sum = 1;
+        }
+        else {
+            sum = array[i - 2] + array[i - 1];
+
+
+        }
+        array.push(sum);
     }
-    return largest;
+    return array;
 }
 
-console.log(largestElement(numbers)); 
+console.log(fib(n))
