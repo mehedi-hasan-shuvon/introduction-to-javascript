@@ -22,3 +22,22 @@ function removeDuplicate(names) {
 
 console.log(removeDuplicate(names));
 */
+
+
+// problem 2
+// reserve a string 
+
+/*
+const greetings = "Hello, how are you?";
+
+function reverseString(text) {
+    let reverse = '';
+    for (const letter of text) {
+        
+        reverse = letter + reverse;
+    }
+    return reverse
+}
+console.log(reverseString(greetings));
+
+*/
