@@ -1,5 +1,5 @@
+// problem 1
 // remove duplicate value 
-
 /*
 const names = ['abul', 'tabul', 'babul', 'abul', 'tabul', 'kabul', 'abul', 'sabul', 'babul']
 
@@ -24,6 +24,7 @@ console.log(removeDuplicate(names));
 */
 
 
+
 // problem 2
 // reserve a string 
 
@@ -41,3 +42,16 @@ function reverseString(text) {
 console.log(reverseString(greetings));
 
 */
+
+
+// problem 3
+// hadelling unexpected function input parameter error 
+
+function add(num1,num2){
+    const sum=num1+num2;
+    return sum;
+}
+
+const firstTotal=add(63, 7);
+
+console.log(firstTotal);
