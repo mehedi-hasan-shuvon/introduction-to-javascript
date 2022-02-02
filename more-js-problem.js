@@ -47,11 +47,29 @@ console.log(reverseString(greetings));
 // problem 3
 // hadelling unexpected function input parameter error 
 
-function add(num1,num2){
-    const sum=num1+num2;
-    return sum;
+/*
+charWood =3cft;
+table=10cft;
+bed=50cft; 
+*/
+
+/*
+function woodCalculater(chairQuantity, tableQuantitiy, bedQuantity){
+    const perChairWood=3;
+    const perTableWood=10;
+    const perBedwood=50;
+
+    let totalWood=perChairWood*chairQuantity+perTableWood*tableQuantitiy+perBedwood*bedQuantity;
+    return totalWood;
 }
 
-const firstTotal=add(63, 7);
 
-console.log(firstTotal);
+console.log(woodCalculater(1,1,1));
+
+*/
+
+// task06
+// divisible 3 or 5
+// foo bar foobar
+
+
