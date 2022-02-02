@@ -118,3 +118,30 @@ console.log(cheapest);
 
 // problem 08
 // calculate the total cost of the products in a shopping cart 
+
+/*
+const products = [
+    { name: 'laptop', price: 43000 },
+    { name: 'shirt', price: 500, quantity: 3 },
+    { name: 'watch', price: 3680, quantity: 3 },
+    { name: 'phone', price: 55000 },
+]
+
+let totalprice = 0;
+
+for (const product of products) {
+    let quantity;
+    console.log(typeof product.quantity);
+    if (typeof product.quantity == 'undefined') {
+        console.log("fsdfds");
+        quantity = 1;
+    } else {
+        quantity = product.quantity;
+    }
+    totalprice = totalprice + product.price * quantity;
+}
+console.log(totalprice);
+*/
+
+// problem 9
+// traveling in a jungle and counting wild animals 
