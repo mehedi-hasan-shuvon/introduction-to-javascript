@@ -95,5 +95,26 @@ foobar(n);
 
 */
 
+
 // problem 07
 // find the cheapest phone form an array of phone objects 
+/*
+const phones = [
+    { name: "samsung s5", price: 45000, camera: 10, storage: 32 },
+    { name: "walton m32", price: 15000, camera: 8, storage: 8 },
+    { name: "xaomi m2", price: 12000, camera: 8, storage: 8 },
+    { name: "oppo a2", price: 17000, camera: 8, storage: 32 },
+    { name: "nokia n55", price: 25000, camera: 8, storage: 64 }
+];
+
+let cheapest = phones[0];
+for (const phone of phones) {
+    if (phone.price < cheapest.price) {
+        cheapest = phone
+    }
+}
+console.log(cheapest);
+*/
+
+// problem 08
+// calculate the total cost of the products in a shopping cart 
