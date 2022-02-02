@@ -72,4 +72,28 @@ console.log(woodCalculater(1,1,1));
 // divisible 3 or 5
 // foo bar foobar
 
+/*
+let n = 50;
+function foobar(n) {
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log("foobar");
+        }
+        else if (i % 3 == 0) {
+            console.log("foo");
+        } else if (i % 5 == 0) {
+            console.log("bar");
+        }
+        else {
+            console.log(i);
+        }
 
+    }
+}
+
+foobar(n);
+
+*/
+
+// problem 07
+// find the cheapest phone form an array of phone objects 
