@@ -143,5 +143,29 @@ for (const product of products) {
 console.log(totalprice);
 */
 
+
 // problem 9
 // traveling in a jungle and counting wild animals 
+
+function animalCount(miles) {
+    let count = 0;
+    const animaDensityFirst10Miles = 10;
+    const animaDensitySecond10Miles = 50;
+    const animaDensityRestMiles = 100;
+    if (miles <= 10) {
+        count = miles * animaDensityFirst10Miles;
+
+    } else if (miles <= 20) {
+        miles = miles - 10;
+        count = 10 * animaDensityFirst10Miles + miles * animaDensitySecond10Miles;
+    }
+    else {
+        miles = miles - 20;
+        count = 10 * animaDensityFirst10Miles + 10 * animaDensitySecond10Miles + miles * animaDensityRestMiles;
+        console.log(count);
+    }
+
+    return count;
+}
+
+console.log(animalCount(25));
