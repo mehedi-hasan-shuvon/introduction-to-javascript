@@ -19,6 +19,7 @@ console.log(vowelCounter(mystring));
 
 //problem 2
 
+/*
 let quantity = -3;
 
 function price(quantity) {
@@ -44,3 +45,27 @@ function price(quantity) {
 }
 
 console.log(price(150));
+
+
+*/
+
+
+// problem 3
+
+const marks = [78, 82, 69];
+
+function checkGPA(marks) {
+    golden = []
+    for (let mark of marks) {
+        if (mark >= 80) {
+            return "yes!!"
+        } else {
+            continue;
+        }
+    }
+
+    return "nobody sadly"
+
+}
+
+console.log(checkGPA(marks));
