@@ -23,21 +23,24 @@ let quantity = -3;
 
 function price(quantity) {
     let price = 0;
-    const first2kg = 30;
-    const restkg = 25;
+    const first100kg = 5;
+    const second100kg = 6;
+    const restkg = 7;
     if (quantity < 0) {
         return "quantity cann't be negetive";
-        
+
     }
     if (typeof quantity != "number") {
         return "please enter a valid number";
     }
-    if (quantity <= 2) {
-        price = quantity * first2kg;
+    if (quantity <= 100) {
+        price = quantity * first100kg;
+    } else if (quantity <= 200) {
+        price = 100 * first100kg + (quantity - 100) * second100kg;
     } else {
-        price = 2 * first2kg + (quantity - 2) * restkg;
+        price = 100 * first100kg + 100 * second100kg + (quantity - 200) * restkg;
     }
     return price;
 }
 
-console.log(price(-5));
+console.log(price(150));
