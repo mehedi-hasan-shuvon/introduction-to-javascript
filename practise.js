@@ -51,7 +51,7 @@ console.log(price(150));
 
 
 // problem 3
-
+/*
 const marks = [78, 82, 69];
 
 function checkGPA(marks) {
@@ -69,3 +69,29 @@ function checkGPA(marks) {
 }
 
 console.log(checkGPA(marks));
+*/
+
+// problem 4 
+// Find the second largest
+
+function secondLargestElement(array) {
+
+    let largest = array[0];
+
+    let secondLargest = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+
+        if (largest < array[i]) {
+            secondLargest = largest;
+            largest = array[i];
+        } else if (secondLargest < array[i] && array[i] < largest) {
+            secondLargest = array[i];
+        }
+    }
+    return [secondLargest,largest];
+}
+
+let array = [45, 66, 66, 35, 66, 64];
+
+console.log(secondLargestElement(array));
