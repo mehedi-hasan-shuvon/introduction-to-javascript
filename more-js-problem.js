@@ -1,5 +1,5 @@
 // problem 1
-// remove duplicate value 
+// remove duplicate value
 /*
 const names = ['abul', 'tabul', 'babul', 'abul', 'tabul', 'kabul', 'abul', 'sabul', 'babul']
 
@@ -9,7 +9,7 @@ function removeDuplicate(names) {
     //     const element = names[i];
 
     // }
-    // another way to expressing for 
+    // another way to expressing for
     for (const element of names) {
         if (unique.indexOf(element) == -1) {
             unique.push(element)
@@ -26,7 +26,7 @@ console.log(removeDuplicate(names));
 
 
 // problem 2
-// reserve a string 
+// reserve a string
 
 /*
 const greetings = "Hello, how are you?";
@@ -34,7 +34,7 @@ const greetings = "Hello, how are you?";
 function reverseString(text) {
     let reverse = '';
     for (const letter of text) {
-        
+
         reverse = letter + reverse;
     }
     return reverse
@@ -45,12 +45,12 @@ console.log(reverseString(greetings));
 
 
 // problem 3
-// hadelling unexpected function input parameter error 
+// hadelling unexpected function input parameter error
 
 /*
 charWood =3cft;
 table=10cft;
-bed=50cft; 
+bed=50cft;
 */
 
 /*
@@ -97,7 +97,7 @@ foobar(n);
 
 
 // problem 07
-// find the cheapest phone form an array of phone objects 
+// find the cheapest phone form an array of phone objects
 /*
 const phones = [
     { name: "samsung s5", price: 45000, camera: 10, storage: 32 },
@@ -117,7 +117,7 @@ console.log(cheapest);
 */
 
 // problem 08
-// calculate the total cost of the products in a shopping cart 
+// calculate the total cost of the products in a shopping cart
 
 /*
 const products = [
@@ -144,9 +144,10 @@ console.log(totalprice);
 */
 
 
+
 // problem 9
 // traveling in a jungle and counting wild animals 
-
+/*
 function animalCount(miles) {
     let count = 0;
     const animaDensityFirst10Miles = 10;
@@ -169,3 +170,10 @@ function animalCount(miles) {
 }
 
 console.log(animalCount(25));
+*/
+let sum = 0;
+for (let i = 0; i <= 3; i++) {
+    sum = sum + i;
+}
+
+console.log(sum);
