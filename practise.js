@@ -1,10 +1,10 @@
 // count the number of vowelts in a string
 
-const mystring = "kamon achen apni?"
+const mystring = "Quick brown fox jumps over the lazy dog"
 
 function vowelCounter(mystring) {
     count = 0;
-    const vowel = "aeiou";
+    const vowel = "aeiouAEIOU";
     for (let char of mystring) {
         if (vowel.indexOf(char) != -1) {
             count++;
