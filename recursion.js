@@ -35,7 +35,7 @@ function factorial(i) {
 
 console.log(factorial(5));
 */
-
+/*
 const products = [
     { name: 'iphone', price: 70000 },
     { name: 'samsung', price: 60000 },
@@ -46,7 +46,7 @@ const products = [
     { name: 'apple watch', price: 20000 },
     { name: 'one plus 4', price: 27000 }
 ]
-
+*/
 /*
 function searchProucts(products, searchText) {
     const result = [];
@@ -62,3 +62,31 @@ function searchProucts(products, searchText) {
 console.log(searchProucts(products, "laptop")); 
 */
 
+const products = [
+    { name: 'iphone', price: 70000 },
+    { name: 'samsung', price: 60000 },
+    { name: 'dell laptop', price: 50000 },
+    { name: 'lenovo yoga laptop', price: 55000 },
+    { name: 'asus tuf 14 laptop', price: 35000 },
+    { name: 'smart watch samsung', price: 7000 },
+    { name: 'apple watch', price: 20000 },
+    { name: 'one plus 4', price: 27000 }
+]
+
+for (const product of products) {
+    if (product.price < 10000) {
+        continue;
+    }
+    console.log(product);
+}
+console.log(1 / 0);
+
+
+const array = [1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 1; i < array.length; i++) {
+    if (i == 5) {
+        continue;
+    }
+    console.log(array[i]);
+}
