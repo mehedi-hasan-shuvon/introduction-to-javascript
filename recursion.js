@@ -25,6 +25,7 @@ function sum(i) {
 console.log(sum(5));
 */
 
+/*
 function factorial(i) {
     if (i == 0 || i == 1) {
         return 1;
@@ -33,4 +34,31 @@ function factorial(i) {
 }
 
 console.log(factorial(5));
+*/
+
+const products = [
+    { name: 'iphone', price: 70000 },
+    { name: 'samsung', price: 60000 },
+    { name: 'dell laptop', price: 50000 },
+    { name: 'lenovo yoga laptop', price: 55000 },
+    { name: 'asus tuf 14 laptop', price: 35000 },
+    { name: 'smart watch samsung', price: 7000 },
+    { name: 'apple watch', price: 20000 },
+    { name: 'one plus 4', price: 27000 }
+]
+
+/*
+function searchProucts(products, searchText) {
+    const result = [];
+    for (let product of products) {
+        if (product.name.includes(searchText)) {
+            result.push(product);
+        }
+
+    }
+    return result;
+}
+
+console.log(searchProucts(products, "laptop")); 
+*/
 
