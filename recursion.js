@@ -14,7 +14,7 @@ function consoleNumber(i) {
 consoleNumber(1);
 
 */
-
+/*
 function sum(i) {
     if (i == 0) {
         return 0;
@@ -23,3 +23,14 @@ function sum(i) {
 }
 
 console.log(sum(5));
+*/
+
+function factorial(i) {
+    if (i == 0 || i == 1) {
+        return 1;
+    }
+    return i * factorial(i - 1);
+}
+
+console.log(factorial(5));
+
